@@ -4,17 +4,33 @@ const arrayTasks = {
     return arr1.concat(arr2);
   },
 
-	// insertAt: function (arr, itemToAdd, index) {
+  insertAt: function (arr, itemToAdd, index) {
+    arr.splice(index, 0, itemToAdd);
+    return arr;
+  },
 
-	// },
+// https://stackoverflow.com/questions/19645186/square-each-number-in-an-array-in-javascript
+  // function (arr) {
+  //   return arr.map(function (x) {
+  //     return Math.pow(x, 2);
+  //   });
+  // }
 
-	// square: function (arr) {
+  square: function (arr) {
+    return arr.map( function (number) {
+      return Math.pow(number, 2);
+    });
+  }
 
-	// },
+  // sum: function (arr) {
+  //     const total = arr.reduce(function(runningTotal, number){
+  //     return runningTotal + number;
+  //     }, 0)
+  //
+  //     return total;
+  //   },
 
-	// sum: function (arr) {
 
-	// },
 
 	// removeAndClone: function (arr, valueToRemove) {
 
